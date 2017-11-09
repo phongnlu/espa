@@ -20,6 +20,11 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 - Super lightweight jQuery like utils function
 - Profiler to profile resource loading and remote calls
 
+## Requirements
+
+- npm >= 5
+- jspm >= 0.17.0-beta
+
 ## Installation
 
 ```cmd
@@ -28,7 +33,7 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 
 ## Usage
 
-```cmd
+```javascript
 import 'espa';
 
 espa.init();

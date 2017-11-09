@@ -4,10 +4,10 @@ import fetch from 'whatwg-fetch';
 import Promise from 'promise-polyfill';
 import observable from 'riot-observable';
 import route from 'riot-route';
-import Bind from 'bind';
-import jBone from 'jbone';
-import loadResource from 'load-resource';
-import logger from 'console-logger';
+import Bind from '../../static_packages/bind.min.js';
+import jBone from '../../static_packages/jbone.min.js';
+import loadResource from '../../static_packages/load-resource.js';
+import logger from '../../static_packages/console-logger.js';
 
 import { registerApp } from './espa.js';
 import { setupRoute } from './espa-route.js';
