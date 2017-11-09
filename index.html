@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ESPA</title>      
+  </head>
+
+  <body>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      System.import('src/scripts/main.js')
+        .then(function(module) {          
+          module.init();
+        });
+    </script>
+  </body>
+</html>
