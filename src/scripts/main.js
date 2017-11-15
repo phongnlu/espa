@@ -19,6 +19,7 @@ window.ESPA = window.ESPA || {};
 window.ESPA._apps = [];
 window.ESPA.ChildApp = ChildApp;
 window.ESPA.registerApp = registerApp;
+window.ESPA.Bind = Bind;
 window.ESPA.observable = observable;
 window.ESPA.route = route;
 window.ESPA.loadResource = loadResource;
