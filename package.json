@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build": "jspm build src/scripts/main.js dist/espa.js && jspm build src/scripts/main.js dist/espa.min.js --minify",
+    "build-lite": "jspm build src/scripts/main-lite.js dist/espa-lite.js && jspm build src/scripts/main-lite.js dist/espa-lite.min.js --minify",
     "dev": "live-server --port=8888"
   },
   "jspm": {

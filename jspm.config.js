@@ -54,6 +54,9 @@ SystemJS.config({
   packages: {
     "espa": {
       "main": "src/scripts/main.js"
+    },
+    "espa-lite": {
+      "main": "src/scripts/main-lite.js"
     }
   }
 });
