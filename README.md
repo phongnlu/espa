@@ -5,7 +5,9 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 ## Highlights
 
 - Custom framework that is heavily focused on small footprint, built on top of collection of many micro js lib
-- Size: ~36Kb min, 12Kb gzip
+- Size:
+	- Without GA: ~36Kb min, 12Kb gzip
+	- With GA: ~74Kb min, 27Kb gzip
 - Compatible all modern browsers. Unsupported browsers will have polyfill
 
 
@@ -18,7 +20,7 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 - Routing
 - 2 way binding
 - Super lightweight jQuery like utils function
-- Profiler to profile resource loading and remote calls
+- Google analytics
 
 ## Requirements
 
@@ -35,9 +37,31 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 
 ```javascript
 import 'espa';
-
-espa.init();
 ```
+
+## Promise
+
+https://github.com/taylorhakes/promise-polyfill
+
+## Fetch api
+
+https://github.com/github/fetch
+
+## Eventing
+
+https://github.com/riot/observable
+
+## Routing
+
+https://github.com/riot/route
+
+## 2 way binding
+
+https://github.com/remy/bind.js/
+
+## Lightweight jQuery
+
+https://github.com/kupriyanenko/jbone
 
 ## Credits
 - Online community

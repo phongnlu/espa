@@ -3,10 +3,10 @@ SystemJS.config({
     "github:": "jspm_packages/github/",
     "npm:": "jspm_packages/npm/",
     "bind": "static_packages/bind.min.js",
-    "mustache": "static_packages/mustache.min.js",
     "jbone": "static_packages/jbone.min.js",
     "load-resource": "static_packages/load-resource.js",
-    "console-logger": "static_packages/console-logger.js"
+    "console-logger": "static_packages/console-logger.js",
+    "ga": "static_packages/analytics.js"
   },
   browserConfig: {
     "baseURL": "/"
@@ -37,15 +37,15 @@ SystemJS.config({
       "optimisation.modules.system"
     ]
   },
-  meta: {
-    "mustache": {
-      "exports": "Mustache"
-    },
+  meta: {    
     "bind": {
       "exports": "Bind"
     },
     "jbone": {
       "exports": "jBone"
+    },
+    "ga": {
+      "exports": "ga"
     }
   },
   map: {
