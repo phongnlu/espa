@@ -1,5 +1,7 @@
 'use strict';
 
+import fetch from 'whatwg-fetch';
+import Promise from 'promise-polyfill';
 import observable from 'riot-observable';
 import route from 'riot-route';
 import Bind from './static_packages/bind.min.js';

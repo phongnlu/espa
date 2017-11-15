@@ -37,8 +37,22 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 
 ## Usage
 
+- Main package: ESPA + Google analytics + pollyfill
+
 ```javascript
 import 'espa';
+```
+
+- Lite package: ESPA
+
+```javascript
+import 'espa/lite';
+```
+
+- Lite package: ESPA + pollyfill
+
+```javascript
+import 'espa/lite-pollyfill';
 ```
 
 ## Promise
