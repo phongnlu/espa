@@ -6,8 +6,9 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 
 - Custom framework that is heavily focused on small footprint, built on top of collection of many micro js lib
 - Size:
-	- Without GA: ~36Kb min, 12Kb gzip
-	- With GA: ~74Kb min, 27Kb gzip
+	- Lite package: ~28Kb min, 10Kb gzip
+	- Lite-pollyfill package: ~36Kb min, 12Kb gzip
+	- Main package: ~74Kb min, 27Kb gzip
 - Compatible all modern browsers. Unsupported browsers will have polyfill
 
 
