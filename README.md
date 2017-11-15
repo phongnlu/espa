@@ -19,6 +19,8 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 - Event emitter
 - Routing
 - 2 way binding
+- Remote assets loading for js/css/image
+- Logger
 - Super lightweight jQuery like utils function
 - Google analytics
 
@@ -49,15 +51,41 @@ https://github.com/github/fetch
 
 ## Eventing
 
+Exposed through window.ESPA.observable
 https://github.com/riot/observable
 
 ## Routing
 
+Exposed through window.ESPA.route
 https://github.com/riot/route
 
 ## 2 way binding
 
 https://github.com/remy/bind.js/
+
+## Remote resources loading
+
+Exposed through window.ESPA.loadResource. This returns a Promise
+
+```javascript
+window.ESPA.loadResource.js(url);
+window.ESPA.loadResource.css(url);
+window.ESPA.loadResource.img(url);
+```
+
+## Logger
+
+Exposed through window.ESPA.logger
+
+```javascript
+window.ESPA.logger.trace();
+window.ESPA.logger.log();
+window.ESPA.logger.debug();
+window.ESPA.logger.info();
+window.ESPA.logger.warn();
+window.ESPA.logger.error();
+```
+
 
 ## Lightweight jQuery
 
