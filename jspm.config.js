@@ -6,7 +6,8 @@ SystemJS.config({
     "jbone": "static_packages/jbone.min.js",
     "load-resource": "static_packages/load-resource.js",
     "console-logger": "static_packages/console-logger.js",
-    "ga": "static_packages/analytics.js"
+    "ga": "static_packages/analytics.js",
+    "espa/": "src/"
   },
   browserConfig: {
     "baseURL": "/"
@@ -37,7 +38,7 @@ SystemJS.config({
       "optimisation.modules.system"
     ]
   },
-  meta: {    
+  meta: {
     "bind": {
       "exports": "Bind"
     },

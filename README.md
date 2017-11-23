@@ -6,6 +6,7 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 
 - Custom framework that is heavily focused on small footprint, built on top of collection of many micro js lib
 - Size:
+	- Barebone package: ~16Kb min, 6Kb gzip
 	- Lite package: ~28Kb min, 10Kb gzip
 	- Lite-pollyfill package: ~36Kb min, 12Kb gzip
 	- Main package: ~74Kb min, 27Kb gzip
@@ -21,6 +22,7 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 - Routing
 - 2 way binding
 - Remote assets loading for js/css/image
+- Some utility functions
 - Logger
 - Super lightweight jQuery like utils function
 - Google analytics
@@ -42,6 +44,12 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 
 ```javascript
 import 'espa';
+```
+
+- Barebone package: just library code
+
+```javascript
+import 'espa/barebone';
 ```
 
 - Lite package: ESPA
@@ -105,6 +113,13 @@ window.ESPA.logger.error();
 ## Lightweight jQuery
 
 https://github.com/kupriyanenko/jbone
+
+## Utils
+
+```javascript
+//return the value of a quwey string. If there's no such query string, an empty string is returned
+window.ESPA.getQueryString(name);
+```
 
 ## Credits
 - Online community

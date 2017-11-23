@@ -13,10 +13,12 @@
     "jspm": "^0.17.0-beta.47"
   },
   "scripts": {
+    "postinstall": "jspm i",
     "build": "jspm build src/scripts/main.js dist/espa.js && jspm build src/scripts/main.js dist/espa.min.js --minify",
     "build-lite": "jspm build lite.js dist/espa-lite.js && jspm build lite.js dist/espa-lite.min.js --minify",
     "build-lite-pollyfill": "jspm build lite-pollyfill.js dist/espa-lite-pollyfill.js && jspm build lite-pollyfill.js dist/espa-lite-pollyfill.min.js --minify",
-    "dev": "live-server --port=8888"
+    "build-barebone": "jspm build barebone.js dist/espa-barebone.js && jspm build barebone.js dist/espa-barebone.min.js --minify",
+    "dev": "live-server --port=8888 --cors"
   },
   "jspm": {
     "main": "src/scripts/main.js",

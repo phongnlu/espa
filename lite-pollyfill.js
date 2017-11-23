@@ -8,6 +8,7 @@ import Bind from './static_packages/bind.min.js';
 import jBone from './static_packages/jbone.min.js';
 import loadResource from './static_packages/load-resource.js';
 import logger from './static_packages/console-logger.js';
+import { getQueryString } from './static_packages/utils.js';
 
 import { registerApp } from './src/scripts/espa.js';
 import { setupRoute } from './src/scripts/espa-route.js';
@@ -21,6 +22,7 @@ window.ESPA.Bind = Bind;
 window.ESPA.observable = observable;
 window.ESPA.route = route;
 window.ESPA.loadResource = loadResource;
+window.ESPA.getQueryString = getQueryString;
 window.ESPA.logger = logger;
 
 window.ESPA.observable(window.ESPA);
