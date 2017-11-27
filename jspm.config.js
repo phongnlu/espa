@@ -6,6 +6,7 @@ SystemJS.config({
     "jbone": "static_packages/jbone.min.js",
     "load-resource": "static_packages/load-resource.js",
     "console-logger": "static_packages/console-logger.js",
+    "micro-template": "static_packages/micro-template.js",
     "ga": "static_packages/analytics.js",
     "espa/": "src/"
   },
