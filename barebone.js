@@ -7,7 +7,6 @@ import tmpl from './static_packages/micro-template.js';
 import { getQueryString, navigate, registerRoute  } from './static_packages/utils.js';
 
 window.ESPA = window.ESPA || {};
-window.ESPA.observable = observable;
 window.ESPA.loadResource = loadResource;
 window.ESPA.getQueryString = getQueryString;
 window.ESPA.navigate = navigate;
