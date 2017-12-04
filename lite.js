@@ -6,6 +6,7 @@ import Bind from './static_packages/bind.min.js';
 import jBone from './static_packages/jbone.min.js';
 import loadResource from './static_packages/load-resource.js';
 import logger from './static_packages/console-logger.js';
+import store from './static_packages/store.js';
 import { getQueryString } from './static_packages/utils.js';
 
 import { registerApp } from './src/scripts/espa.js';
@@ -22,6 +23,7 @@ window.ESPA.route = route;
 window.ESPA.loadResource = loadResource;
 window.ESPA.getQueryString = getQueryString;
 window.ESPA.logger = logger;
+window.ESPA.store = store;
 
 window.ESPA.observable(window.ESPA);
 

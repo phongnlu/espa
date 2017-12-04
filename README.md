@@ -24,6 +24,7 @@ ESPA is a custom framework that provides the ability for a parent SPA to host mu
 - Remote assets loading for js/css/image
 - Some utility functions
 - Logger
+- Store
 - Super lightweight jQuery like utils function
 - Google analytics
 
@@ -58,10 +59,10 @@ import 'espa/barebone';
 import 'espa/lite';
 ```
 
-- Lite package: ESPA + pollyfill
+- Lite package: ESPA + polyfill
 
 ```javascript
-import 'espa/lite-pollyfill';
+import 'espa/lite-polyfill';
 ```
 
 ## Promise
@@ -109,6 +110,14 @@ window.ESPA.logger.warn();
 window.ESPA.logger.error();
 ```
 
+## Store
+
+Exposed through window.ESPA.store
+
+```javascript
+window.ESPA.store.get(key);
+window.ESPA.store.set(key);
+```
 
 ## Lightweight jQuery
 

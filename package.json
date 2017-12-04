@@ -16,7 +16,7 @@
     "postinstall": "jspm i",
     "build": "jspm build src/scripts/main.js dist/espa.js && jspm build src/scripts/main.js dist/espa.min.js --minify",
     "build-lite": "jspm build lite.js dist/espa-lite.js && jspm build lite.js dist/espa-lite.min.js --minify",
-    "build-lite-pollyfill": "jspm build lite-pollyfill.js dist/espa-lite-pollyfill.js && jspm build lite-pollyfill.js dist/espa-lite-pollyfill.min.js --minify",
+    "build-lite-polyfill": "jspm build lite-polyfill.js dist/espa-lite-polyfill.js && jspm build lite-polyfill.js dist/espa-lite-polyfill.min.js --minify",
     "build-barebone": "jspm build barebone.js dist/espa-barebone.js && jspm build barebone.js dist/espa-barebone.min.js --minify",
     "dev": "live-server --port=8888 --cors"
   },
