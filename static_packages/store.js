@@ -7,7 +7,7 @@ let store = (function() {
             ESPA.logger.log('found ' + key + ' in store with value: ' + value);
             return value;
         } else {
-            ESPA.logger.error('cannot find key in store: ' + key);
+            ESPA.logger.log('cannot find key in store: ' + key);
             return null;
         }
     }
@@ -17,7 +17,7 @@ let store = (function() {
             ESPA.logger.log('save ' + key + ' in store with value: ' + value);
             _store[key] = value;
         } else {
-            ESPA.logger.error('cannot set key in store as key is empty');
+            ESPA.logger.log('cannot set key in store as key is empty');
         }
     }
 
