@@ -44,10 +44,53 @@ let loadResource = (function() {
     };
   }
 
+  function _loadCallback(tag) {
+    return function(url, callback) {
+      if (resourceCache[url]) {
+        callback(url);
+      } else {
+        var element = document.createElement(tag);
+        var parent = 'body';
+        var attr = 'src';
+
+        // Important success and error for the promise
+        element.onload = function() {
+          callback(url);
+          //dont cache bootstrap script
+          if (url.toLowerCase().indexOf('espa-bootstrap.js') == -1) {
+            resourceCache[url] = url;
+          }
+        };
+        element.onerror = function() {
+          callback(url, 'fail to load resource');
+        };
+
+        // Need to set different attributes depending on tag type
+        switch(tag) {
+          case 'script':
+            element.async = true;
+            break;
+          case 'link':
+            element.type = 'text/css';
+            element.rel = 'stylesheet';
+            attr = 'href';
+            parent = 'head';
+        }
+
+        // Inject into document to kick off loading
+        element[attr] = url;
+        document[parent].appendChild(element);
+      }
+    }
+  }
+
   return {
     css: _load('link'),
     js: _load('script'),
-    img: _load('img')
+    img: _load('img'),
+    cssCallback: _loadCallback('link'),
+    jsCallback: _loadCallback('script'),
+    imgCallback: _loadCallback('img')
   }
 })();
 
