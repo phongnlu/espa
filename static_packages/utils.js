@@ -18,7 +18,7 @@ export function registerRoute(controller, callback) {
         ESPA.route(controller, function() {
             viewData && callback(viewData);
         });
-        ESPA.on('/controllers/' + controller + '/view-data', function(data) {
+        ESPA.one('/controllers/' + controller + '/view-data', function(data) {
             viewData = data;
             callback(viewData);
         });
