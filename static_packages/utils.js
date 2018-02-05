@@ -7,8 +7,10 @@ export function getQueryString(name) {
 
 export function navigate(controller, viewData) {
     ESPA.logger.log('navigate to: ' + controller);
+    let routeData = viewData || {};
     ESPA.route(controller);
-    ESPA.trigger('/controllers/' + controller + '/view-data', viewData || {});        
+    ESPA.trigger('/controllers', controller, routeData);
+    ESPA.trigger('/controllers/' + controller + '/view-data', routeData);        
 }
 
 export function registerRoute(controller, callback) {
