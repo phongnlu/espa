@@ -18,7 +18,7 @@ export function navigate(controller, viewData) {
     
     //for prod code, we need to reject promise to explicitly terminate the chain
     //for unit test, we need to resolve promise so that the test does not fail prematurely
-    if (ESPA.store.get(storeKeys['app/context/mode']) === 'non-test') {
+    if (ESPA.store.get('app/context/mode') === 'non-test') {
         return Promise.reject({error: 'navigating to ' + controller});
     } else {
         return Promise.resolve({data: 'navigating to ' + controller});
