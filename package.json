@@ -1,6 +1,6 @@
 {
   "name": "espa",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "embeddable SPA",
   "main": "src/scripts/main.js",
   "author": "Phong Lu",

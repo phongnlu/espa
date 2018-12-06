@@ -7,6 +7,8 @@ export function getQueryString(name) {
 
 var routeData = {};
 var routeCallback = {};
+//start listening to routes
+ESPA.route.start();
 
 export function navigate(controller, viewData) {    
     ESPA.logger.log('navigate to: ' + controller);  
