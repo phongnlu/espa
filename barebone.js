@@ -15,6 +15,11 @@ window.ESPA.registerRoute = registerRoute;
 window.ESPA.factoryMixin = factoryMixin;
 window.ESPA.logger = logger;
 window.ESPA.store = store;
-window.ESPA.tmpl = tmpl;
+window.ESPA.tmpl = (str, data, locale) => {
+    if (typeof locale !== 'undefined') {
+        data = Object.assign(data, locale);
+    }
+    return tmpl(str, data);
+};
 
 window.ESPA.observable(window.ESPA);
